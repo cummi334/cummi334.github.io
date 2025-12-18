@@ -20,41 +20,85 @@
     <div class="hero">
       <p class="kicker">Portfolio</p>
       <h1>Projects</h1>
-      <p class="subtitle">A few things I’ve built and learned from.</p>
-    </div>
-
-    <div class="section">
-      <h2>Bitcoin Price Prediction (Hourly Returns)</h2>
-      <p class="small">
-        Built an ML pipeline using hourly crypto data, engineered technical indicators (RSI/MACD/volatility),
-        and experimented with models like XGBoost and deep learning architectures.
-      </p>
-      <p class="small">
-        <a class="btn btn-ghost" href="https://github.com/yourusername/yourrepo">GitHub</a>
+      <p class="subtitle prose">
+        These projects highlight my work in machine learning, time series prediction, and computational modeling.
+        Each project includes a longer PDF writeup with methodology, results, and what I learned.
       </p>
     </div>
 
-    <div class="section">
-      <h2>Fake Job Posting Classifier (NLP)</h2>
-      <p class="small">
-        Built a classifier to detect suspicious/fake job postings using text features and supervised learning.
-        Focused on generalization and avoiding leakage.
-      </p>
-      <p class="small">
-        <a class="btn btn-ghost" href="https://github.com/yourusername/yourrepo">GitHub</a>
-      </p>
+    <div class="project-grid">
+
+      <div class="card">
+        <h2>Bitcoin Price Prediction (Hourly Returns)</h2>
+        <p class="meta">Time Series • Feature Engineering • ML / Deep Learning</p>
+
+        <div class="tags">
+          <span class="tag">XGBoost</span>
+          <span class="tag">LSTM/CNN</span>
+          <span class="tag">Technical Indicators</span>
+          <span class="tag">Returns Forecasting</span>
+        </div>
+
+        <p class="prose">
+          Built a pipeline to predict future BTC price movement using hourly market data and engineered signals
+          (momentum, volatility, RSI/MACD-style indicators, and cross-asset features). Focused on reducing “copy last
+          price” behavior by modeling returns and emphasizing recent trends.
+        </p>
+
+        <p class="prose">
+          Key work: dataset construction, feature engineering, backtesting setup, and model experimentation.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="assets/projects/btc-prediction.pdf">Read PDF Writeup</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Fake Job Posting Classifier</h2>
+        <p class="meta">NLP • Classification • Data Cleaning</p>
+
+        <div class="tags">
+          <span class="tag">Text Features</span>
+          <span class="tag">Model Evaluation</span>
+          <span class="tag">Leakage Avoidance</span>
+        </div>
+
+        <p class="prose">
+          Built a classifier to identify suspicious or fake job postings using text-based signals and structured fields.
+          Emphasis on clean preprocessing, avoiding label leakage, and selecting evaluation metrics appropriate for
+          imbalanced classification.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="assets/projects/fake-jobs.pdf">Read PDF Writeup</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Three-Body Simulation / Space Modeling</h2>
+        <p class="meta">Simulation • Physics • Data Generation</p>
+
+        <div class="tags">
+          <span class="tag">Numerical Methods</span>
+          <span class="tag">Labeling Outcomes</span>
+          <span class="tag">Visualization</span>
+        </div>
+
+        <p class="prose">
+          Implemented a simulation workflow for chaotic orbital dynamics. Generated datasets by sampling initial
+          conditions and labeling outcomes (stable/collision/ejection). This project focuses on turning simulation into
+          usable training data.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="assets/projects/threebody.pdf">Read PDF Writeup</a>
+        </div>
+      </div>
+
     </div>
 
-    <div class="section">
-      <h2>Space Simulation / Three-Body Modeling</h2>
-      <p class="small">
-        Implemented a simulation and data generation workflow for chaotic orbital dynamics, with tools for labeling
-        outcomes like stability, collision, and ejection.
-      </p>
-      <p class="small">
-        <a class="btn btn-ghost" href="https://github.com/yourusername/yourrepo">GitHub</a>
-      </p>
-    </div>
   </div>
 </body>
 </html>
+
