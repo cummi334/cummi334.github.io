@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Football Win% Prediction | Sethan Cummings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* PDF embed */
+    .pdf-wrap {
+      margin-top: 14px;
+      border: 1px solid #eee;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .pdf {
+      width: 100%;
+      height: 900px;
+      border: 0;
+    }
+    @media (max-width: 520px) {
+      .pdf { height: 650px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="assets/resume.pdf">Resume</a>
+    </div>
+
+    <div class="hero">
+      <p class="kicker">Course Project</p>
+      <h1>College Football Win% Prediction — Feature Engineering + Modeling</h1>
+      <p class="subtitle prose">
+        Built predictive models for team win percentage using cleaned college football data, engineered features,
+        and improved model stability and interpretability by addressing multicollinearity.
+      </p>
+
+      <div class="tags">
+        <span class="tag">R</span>
+        <span class="tag">Data Cleaning</span>
+        <span class="tag">Feature Engineering</span>
+        <span class="tag">Regression</span>
+        <span class="tag">Multicollinearity</span>
+        <span class="tag">Visualization</span>
+        <span class="tag">Model Evaluation</span>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn-ghost" href="projects.html">← Back to Projects</a>
+        <a class="btn btn-primary" href="assets/projects/cfb-winpercent.pdf">
+          Open PDF in new tab
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Project context</h2>
+      <p class="small prose">
+        Completed for <em>Introduction to Data Science</em>. The project focused on building an end-to-end modeling workflow
+        in R: cleaning a real dataset, constructing useful features, fitting predictive models, and communicating findings
+        with clear plots and responsible interpretation.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>What I did</h2>
+      <p class="small prose">
+        • Cleaned and enhanced team-level football data (handling missing values, standardizing variables, and validating joins/aggregations).<br>
+        • Engineered features to capture team performance signals and improve predictive power.<br>
+        • Built predictive models for win percentage and evaluated model fit and generalization behavior.<br>
+        • Diagnosed multicollinearity and adjusted feature sets / model structure to improve stability and interpretability.<br>
+        • Created visualizations in R to explain relationships between features and win percentage and to support conclusions.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Key takeaways</h2>
+      <p class="small prose">
+        This project reinforced that good predictions often come from thoughtful feature design and careful diagnostics,
+        not just fitting a model once. Addressing multicollinearity improved interpretability and helped avoid unstable
+        coefficient behavior, making conclusions more reliable.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Writeup</h2>
+      <p class="small prose">
+        The full report, figures, and discussion are embedded below.
+      </p>
+
+      <div class="pdf-wrap">
+        <iframe class="pdf" src="assets/projects/cfb-winpercent.pdf"></iframe>
+      </div>
+
+      <p class="small" style="margin-top:10px;">
+        If the PDF does not load in your browser, use the “Open PDF” button above.
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
