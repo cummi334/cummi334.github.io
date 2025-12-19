@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Three-Body Orbital Dynamics Predictor | Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .pdf-wrap { margin-top: 14px; border: 1px solid #eee; border-radius: 14px; overflow: hidden; }
+    .pdf { width: 100%; height: 900px; border: 0; }
+    @media (max-width: 520px) { .pdf { height: 650px; } }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="assets/resume.pdf">Resume</a>
+    </div>
+
+    <div class="hero">
+      <p class="kicker">Project</p>
+      <h1>Three-Body Orbital Dynamics Predictor</h1>
+      <p class="subtitle prose">
+        Built a Newtonian 3-body simulator to generate thousands of trajectories, label outcomes (stable/collision/ejection),
+        engineer physics-based features, and train classifiers to predict long-term stability from initial conditions.
+      </p>
+
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">NumPy</span>
+        <span class="tag">SciPy</span>
+        <span class="tag">Simulation</span>
+        <span class="tag">Dataset Generation</span>
+        <span class="tag">Feature Engineering</span>
+        <span class="tag">Classification</span>
+        <span class="tag">Matplotlib</span>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn-ghost" href="projects.html">← Back to Projects</a>
+        <a class="btn btn-primary" href="assets/projects/threebody-orbits.pdf">Open PDF in new tab</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>What I did</h2>
+      <p class="small prose">
+        • Implemented a numerical Newtonian gravity simulator and collected trajectory data across many randomized initial conditions.<br>
+        • Labeled each simulation outcome as stable, collision, or ejection using rule-based criteria from the dynamics.<br>
+        • Engineered physics-informed features (energy, angular momentum, barycenter-normalized coordinates) to make the dataset model-ready.<br>
+        • Trained and evaluated classification models to predict long-term stability directly from initial conditions.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Results / Takeaways</h2>
+      <p class="small prose">
+        This project taught me how to turn a simulation into a machine-learning dataset: defining labels carefully,
+        choosing features that preserve invariants, and validating behavior with 2D/3D visualizations. Next improvements
+        include more robust integrators, stratified sampling of initial conditions, and calibrated probability outputs.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Writeup</h2>
+      <div class="pdf-wrap">
+        <iframe class="pdf" src="assets/projects/threebody-orbits.pdf"></iframe>
+      </div>
+      <p class="small" style="margin-top:10px;">
+        If the PDF doesn’t load here, use the “Open PDF” button above.
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
