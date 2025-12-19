@@ -21,84 +21,109 @@
       <p class="kicker">Portfolio</p>
       <h1>Projects</h1>
       <p class="subtitle prose">
-        These projects highlight my work in machine learning, time series prediction, and computational modeling.
-        Each project includes a longer PDF writeup with methodology, results, and what I learned.
+        Selected coursework and personal projects. Each project page includes a writeup and an embedded PDF of my work.
       </p>
     </div>
 
     <div class="project-grid">
 
+      <!-- Project 1 -->
       <div class="card">
-        <h2>Bitcoin Price Prediction (Hourly Returns)</h2>
-        <p class="meta">Time Series • Feature Engineering • ML / Deep Learning</p>
+        <h2>Pneumonia Detection — Traditional ML Model Comparison</h2>
+        <p class="meta">Computational Modeling & Data Analysis II • April 2025 • Team</p>
 
         <div class="tags">
-          <span class="tag">XGBoost</span>
-          <span class="tag">LSTM/CNN</span>
-          <span class="tag">Technical Indicators</span>
-          <span class="tag">Returns Forecasting</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">KNN</span>
+          <span class="tag">Logistic Regression</span>
+          <span class="tag">Perceptron</span>
+          <span class="tag">SVM</span>
+          <span class="tag">Evaluation</span>
         </div>
 
         <p class="prose">
-          Built a pipeline to predict future BTC price movement using hourly market data and engineered signals
-          (momentum, volatility, RSI/MACD-style indicators, and cross-asset features). Focused on reducing “copy last
-          price” behavior by modeling returns and emphasizing recent trends.
-        </p>
-
-        <p class="prose">
-          Key work: dataset construction, feature engineering, backtesting setup, and model experimentation.
-        </p>
-
-        <div class="actions">
-          <a class="btn btn-primary" href="assets/projects/btc-prediction.pdf">Read PDF Writeup</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2>Fake Job Posting Classifier</h2>
-        <p class="meta">NLP • Classification • Data Cleaning</p>
-
-        <div class="tags">
-          <span class="tag">Text Features</span>
-          <span class="tag">Model Evaluation</span>
-          <span class="tag">Leakage Avoidance</span>
-        </div>
-
-        <p class="prose">
-          Built a classifier to identify suspicious or fake job postings using text-based signals and structured fields.
-          Emphasis on clean preprocessing, avoiding label leakage, and selecting evaluation metrics appropriate for
-          imbalanced classification.
+          Built and compared multiple baseline classifiers for pneumonia detection, focusing on practical tradeoffs
+          between accuracy, training time, and limitations across models.
         </p>
 
         <div class="actions">
-          <a class="btn btn-primary" href="assets/projects/fake-jobs.pdf">Read PDF Writeup</a>
+          <a class="btn btn-primary" href="pneumonia.html">Open Project</a>
         </div>
       </div>
 
+      <!-- Project 2 -->
       <div class="card">
-        <h2>Three-Body Simulation / Space Modeling</h2>
-        <p class="meta">Simulation • Physics • Data Generation</p>
+        <h2>Climate Data Analysis — Cleaning, Modeling, and Visualization</h2>
+        <p class="meta">Computational Modeling & Data Analysis I • November 2024 • Individual</p>
 
         <div class="tags">
-          <span class="tag">Numerical Methods</span>
-          <span class="tag">Labeling Outcomes</span>
+          <span class="tag">pandas</span>
+          <span class="tag">Data Cleaning</span>
+          <span class="tag">Curve Fitting</span>
+          <span class="tag">Modeling</span>
+          <span class="tag">Matplotlib</span>
+        </div>
+
+        <p class="prose">
+          Cleaned and transformed large climate datasets, modeled relationships in key indicators, and communicated
+          findings with clear visualizations and discussion of robustness and limitations.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="climate.html">Open Project</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card">
+        <h2>College Football Win% Prediction — Feature Engineering + Modeling</h2>
+        <p class="meta">Introduction to Data Science • April 2024 • Team</p>
+
+        <div class="tags">
+          <span class="tag">R</span>
+          <span class="tag">Feature Engineering</span>
+          <span class="tag">Regression</span>
+          <span class="tag">Multicollinearity</span>
           <span class="tag">Visualization</span>
         </div>
 
         <p class="prose">
-          Implemented a simulation workflow for chaotic orbital dynamics. Generated datasets by sampling initial
-          conditions and labeling outcomes (stable/collision/ejection). This project focuses on turning simulation into
-          usable training data.
+          Cleaned and enhanced team-level football data, engineered features, built predictive models for win
+          percentage, and addressed multicollinearity to improve stability and interpretability.
         </p>
 
         <div class="actions">
-          <a class="btn btn-primary" href="assets/projects/threebody.pdf">Read PDF Writeup</a>
+          <a class="btn btn-primary" href="cfb.html">Open Project</a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="card">
+        <h2>Three-Body Orbital Dynamics Predictor — Simulation → Dataset → ML</h2>
+        <p class="meta">Personal Project • Fall 2025 • Individual</p>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">NumPy/SciPy</span>
+          <span class="tag">Simulation</span>
+          <span class="tag">Dataset Generation</span>
+          <span class="tag">Physics Features</span>
+          <span class="tag">Classification</span>
+          <span class="tag">2D/3D Visualization</span>
+        </div>
+
+        <p class="prose">
+          Built a Newtonian 3-body simulator to generate thousands of physically accurate trajectories, labeled outcomes
+          (stable/collision/ejection), engineered physics-based features (energy, angular momentum, barycenter-normalized
+          coordinates), and trained classifiers to predict long-term stability from initial conditions.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="threebody.html">Open Project</a>
         </div>
       </div>
 
     </div>
-
   </div>
 </body>
 </html>
-
