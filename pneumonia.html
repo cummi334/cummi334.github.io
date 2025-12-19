@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pneumonia Detection — ML Model Comparison | Sethan Cummings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* PDF embed */
+    .pdf-wrap {
+      margin-top: 14px;
+      border: 1px solid #eee;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .pdf {
+      width: 100%;
+      height: 900px;
+      border: 0;
+    }
+    @media (max-width: 520px) {
+      .pdf { height: 650px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="assets/resume.pdf">Resume</a>
+    </div>
+
+    <div class="hero">
+      <p class="kicker">Course Project</p>
+      <h1>Pneumonia Detection — Traditional ML Model Comparison</h1>
+      <p class="subtitle prose">
+        Comparative analysis of baseline machine learning classifiers for pneumonia detection, with emphasis on
+        interpretability, training behavior, and practical tradeoffs between models rather than raw accuracy alone.
+      </p>
+
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">scikit-learn</span>
+        <span class="tag">KNN</span>
+        <span class="tag">Logistic Regression</span>
+        <span class="tag">Perceptron</span>
+        <span class="tag">SVM</span>
+        <span class="tag">Model Evaluation</span>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn-ghost" href="projects.html">← Back to Projects</a>
+        <a class="btn btn-primary" href="assets/projects/pneumonia-ml.pdf">
+          Open PDF in new tab
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Project context</h2>
+      <p class="small prose">
+        This project was completed as part of <em>Computational Modeling and Data Analysis II</em>.
+        The goal was to build, compare, and critically evaluate multiple traditional machine learning
+        models on a medical classification task, with attention to strengths, weaknesses, and limitations
+        of each approach.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>What I did</h2>
+      <p class="small prose">
+        • Implemented and trained K-Nearest Neighbors, Logistic Regression, Perceptron, and Support Vector Machine classifiers using scikit-learn.<br>
+        • Standardized features and carefully managed preprocessing to ensure fair comparisons across models.<br>
+        • Evaluated models using accuracy and training time, highlighting computational and practical tradeoffs.<br>
+        • Visualized results with matplotlib to communicate performance differences and model behavior.<br>
+        • Identified limitations such as sensitivity to hyperparameters, interpretability challenges, and dataset constraints.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Key takeaways</h2>
+      <p class="small prose">
+        This project reinforced the importance of baseline models in applied machine learning. While more complex
+        models can offer performance gains, simpler classifiers often provide strong interpretability, faster training,
+        and clearer failure modes. The comparison emphasized that model selection depends on context, data quality,
+        and downstream constraints — not just headline accuracy.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Writeup</h2>
+      <p class="small prose">
+        The full analysis, figures, and discussion are embedded below.
+      </p>
+
+      <div class="pdf-wrap">
+        <iframe class="pdf" src="assets/projects/pneumonia-ml.pdf"></iframe>
+      </div>
+
+      <p class="small" style="margin-top:10px;">
+        If the PDF does not load in your browser, use the “Open PDF” button above.
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
+
