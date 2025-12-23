@@ -47,11 +47,25 @@ a:hover {
   line-height: 1.2;
 }
 
-/* override your existing nav layout so it behaves inside the topbar */
-.nav{
-  justify-content:flex-end;
-  padding: 0; /* remove extra padding that causes vertical drift */
+/* --- Simple top nav --- */
+.nav {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0; /* inside topbar */
 }
+
+.nav a {
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  opacity: 1;
+  text-decoration: none; /* optional: looks cleaner in nav */
+}
+
 
 
 /* --- Hero section --- */
