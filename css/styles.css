@@ -25,23 +25,34 @@ a:hover {
   padding: 28px 18px;
 }
 
-/* --- Simple top nav --- */
-.nav {
-  display: flex;
-  gap: 18px;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 10px 0;
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:18px;
+  padding: 6px 0 14px;
+  border-bottom: 1px solid #eee;
 }
 
-.nav a {
-  opacity: 0.8;
-  font-weight: 500;
+.brand-name{
+  font-weight: 750;
+  font-size: 1.35rem;
+  line-height: 1.1;
 }
 
-.nav a:hover {
-  opacity: 1;
+.brand-meta{
+  margin-top: 6px;
+  font-size: 0.95rem;
+  opacity: 0.75;
+  line-height: 1.2;
 }
+
+/* override your existing nav layout so it behaves inside the topbar */
+.nav{
+  justify-content:flex-end;
+  padding: 0; /* remove extra padding that causes vertical drift */
+}
+
 
 /* --- Hero section --- */
 .hero {
